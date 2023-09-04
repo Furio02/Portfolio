@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:rgba(51,66,109,255);
+    color: rgb(237,237,130);
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(51,66,109,255);
+}
+
+#header-img{
+    width: 100px;
+}
+
+.image-container{
+    width: 60vw;
+}
+
+.nav-bar{
+    padding-right: 8rem;
+    display: flex;
+}
+
+nav > ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul{
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: rgb(237,237,130);
+    font-weight: 400;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10rem;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 8rem;
+}
+
+.welcome h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.welcome h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.welcome p{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10rem;
+}
+
+.content-item{
+    background-color: #1a2238;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+}
+
+.content-link{
+    font-size: 1.6rem;
+    color: rgb(237,237,130);
+    text-decoration: none;
+    background-color: #1a2238;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.content-link i{
+    padding: .5rem;
+}
+
+.content-link .ri-arrow-up-line{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    background-color: #212838;
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content: "";
+    width: .6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 2rem;
+}
+
+.content-item:target .answer{
+    max-height: 20rem;
+}
+
+.content-item:target .content-link .ri-arrow-down-line{
+    display: none;
+}
+
+.content-item:target .content-link .ri-arrow-up-line{
+    display: block;
+}
+
+#skill{
+    margin-top: 5rem;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    margin: 5rem 0;
+}
+
+.level{
+    background-color: #1a2238;
+    padding: 2rem 5rem;
+    font-size: 1rem;
+}
+
+.card{
+    width: calc(100%/3);
+    border: 1px solid rgb(237,237,130);
+    text-align: center;
+}
+
+.card ul{
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.card li{
+    padding: 10px 0;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact ul{
+    display: flex;
+}
+
+.contact li{
+    padding: 10px 20px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.contact a:visited{
+    color: rgb(237,237,130);
+}
+
+.contact i{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #1a2238;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
