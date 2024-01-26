@@ -3,54 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="icon" href="img/Logo.png" type="image/png" sizes="32x32">
-    <title>Furio's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <header id="header">
-        <div class="image-container">
-            <img src="img/Logo.png" alt="Logo" id="header-img">
+    
+    <div class="container-fluid testata">
+        <div class="row">
+            <div class="col-2 col-sm-1 logo">
+                <img src="RES/Logo.png" alt="Logo" id="logo">
+            </div>
+            <div class="col nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-me">About me</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <section class="home" id="home">
-            <div class="welcome">
-                <h1>Welcome</h1>
-                <h2>Hi, i am <span>Furio</span> and i will show you what i am capable of!</h2>
-                <p>I will explain everything down below but, if u have any question, do not esitate to contact me. I will be pleased to respond you!</p>
+    </div>
+
+    <div class="container corpo">
+        <section id="home">
+            <div class="row">
+                <div class="col titolo">
+                    <h1>WELCOME</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col sottotitolo">
+                    <h2>This is my personal portfolio developed by myself</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col sottotesto">
+                    <p>Here you will find information about me. If you have any question please do not hesitate to contact me via email or social media <a href="#contact"> here</a></p>
+                </div>
             </div>
         </section>
-        <section class="about-me" id="about-me">
-            <div class="presentation">
-
-                <div class="content-item" id="question1">
-                    <a href="#question1" class="content-link">
+        <section id="about-me">
+                <div class="faq">
+                    <div class="question">
                         <h2>Who am I?</h2>
                         <i class="ri-arrow-down-line"></i>
-                        <i class="ri-arrow-up-line"></i>
-                    </a>
+                    </div>
                     <div class="answer">
                         <p>I am a 21 years old guy who has so many interest in History, Computer Science, Science (like Phisique, Chemistry, etc, etc...), Photografy and Aviation
                         </p>
                     </div>
                 </div>
 
-                <div class="content-item" id="question2">
-                    <a href="#question2" class="content-link">
+                <div class="faq">
+                    <div class="question">
                         <h2>What i am looking for?</h2>
                         <i class="ri-arrow-down-line"></i>
-                        <i class="ri-arrow-up-line"></i>
-                    </a>
+                    </div>
                     <div class="answer">
                         <p>
                             I am loking foor a new experience in my life. I am every time ready to learn something new and to test my limit.
@@ -58,12 +70,11 @@
                     </div>
                 </div>
 
-                <div class="content-item" id="question3">
-                    <a href="#question3" class="content-link">
+                <div class="faq">
+                    <div class="question">
                         <h2>Where did i studied?</h2>
                         <i class="ri-arrow-down-line"></i>
-                        <i class="ri-arrow-up-line"></i>
-                    </a>
+                    </div>
                     <div class="answer">
                         <p>
                             I have an HighSchool diploma in Classical Studies and after that i went to Computer Science University of Florence and after a year i dropped off because it did not mathced what i was looking for. Then i attended a 3 month course in Cyber Security and after that i attended a FullStack Developer course of 6 month where i learned Java, Html, Css, Javascript, Database, SQL and the usage of of some FrameWork like Spring.
@@ -71,72 +82,99 @@
                     </div>
                 </div>
 
-                <div class="content-item" id="question4">
-                    <a href="#question4" class="content-link">
+                <div class="faq">
+                    <div class="question">
                         <h2>What is my dream?</h2>
                         <i class="ri-arrow-down-line"></i>
-                        <i class="ri-arrow-up-line"></i>
-                    </a>
+                    </div>
                     <div class="answer">
                         <p>
-                            Let's just say that i don't have only one dream. I would like to get a Pilot license, i would like to develop, or participate in the developing, a videogame or an application. My true dream is to live my life happily. I think that's all!
+                            Let's just say that i don't have only one dream. I would like to get a Pilot license, i would like to develop, or participate in the development, a videogame or an application. My true dream is to live my life happily. I think that's all!
                         </p>
                     </div>
                 </div>
-
+        </section>
+        <section id="features">
+            <div class="row cards">
+                <div class="col">
+                    <div class="card card-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Programming Languages</h5>
+                            <ul class="card-text">
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>Sql</li>
+                                <li>C#</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Software</h5>
+                            <ul class="card-text">
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe LightRoom</li>
+                                <li>Adobe Premiere Pro</li>
+                                <li>Blender</li>
+                                <li>Unity</li>
+                                <li>Visual Studio</li>
+                                <li>Eclipse</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Soft Skill</h5>
+                            <ul class="card-text">
+                                <li>Team Work</li>
+                                <li>Adaptability</li>
+                                <li>Communication</li>
+                                <li>Creativity</li>
+                                <li>Problem solving</li>
+                                <li>Critical Thinking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <h1 id="skill">What are my skill?</h1>
-        <section class="features" id="features">
-            <div class="card">
-                <div class="level"><h2>Languages</h2></div>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
+        <section id="contact">
+            <div class="row">
+                <div class="col social-text">
+                    <h2>Social and Email</h2>
+                    <p>If u want to contact me you can follow me on</p>
+                </div>
             </div>
-            <div class="card">
-                <div class="level"><h2>Software</h2></div>
-                <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe LightRoom</li>
-                    <li>Adobe Premiere Pro</li>
-                    <li>Blender</li>
-                    <li>Unity</li>
-                    <li>Visual Studio</li>
-                    <li>Eclipse</li>
-                </ul>
-            </div>
-            <div class="card">
-                <div class="level"><h2>Soft Skill</h2></div>
-                <ul>
-                    <li>Team Work</li>
-                    <li>Adaptability</li>
-                    <li>Communication</li>
-                    <li>Creativity</li>
-                    <li>Problem solving</li>
-                    <li>Critical Thinking</li>
-                </ul>
+            <div class="row">
+                <div class="col social-media">
+                    <ul>
+                        <a href="https://www.linkedin.com/in/furio-papini-30a422258/" target="_blank"><li><i class="ri-linkedin-box-fill"></i>Linkedin</li></a>
+                        <a href="https://github.com/Furio02?tab=repositories" target="_blank"><li><i class="ri-github-fill"></i>Github</li></a>
+                        <a href="https://www.instagram.com/furiopapini/" target="_blank"><li><i class="ri-instagram-line"></i>Instagram</li></a>
+                        <a href="https://www.facebook.com/furio.papini.7/" target="_blank"><li><i class="ri-facebook-box-fill"></i>Facebook</li></a>
+                        <a href="https://twitter.com/FurioPapini" target="_blank"><li><i class="ri-twitter-x-fill"></i>Twitter</li></a>
+                    </ul>
+                    <p>Or you can write me an email at <i class="ri-mail-send-line"></i> "furiopapini@gmail.com"</p>
+                </div>
             </div>
         </section>
-        <section class="contact" id="contact">
-            <h2>Social and email</h2>
-            <p>If u want to contact me you can add me on</p>
-            <ul>
-                <a href="https://www.linkedin.com/in/furio-papini-30a422258/"><li><i class="ri-linkedin-box-fill"></i>Linkedin</li></a>
-                <a href="https://github.com/Furio02?tab=repositories"><li><i class="ri-github-fill"></i>Github</li></a>
-                <a href="https://www.instagram.com/furiopapini/"><li><i class="ri-instagram-line"></i>Instagram</li></a>
-                <a href="https://www.facebook.com/furio.papini.7/"><li><i class="ri-facebook-box-fill"></i>Facebook</li></a>
-                <a href="https://twitter.com/FurioPapini"><li><i class="ri-twitter-x-fill"></i>Twitter</li></a>
-            </ul>
-            <p>Or you can write me an email at <i class="ri-mail-send-line"></i> "furiopapini@gmail.com"</p>
-        </section>
+    </div>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col footer-text">
+                <h4>Developer of the Page Furio Papini (date 15/09/2023)</h4>
+            </div>        
         </div>
-    <footer>Developer of the page Furio Papini 04/09/2023</footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
